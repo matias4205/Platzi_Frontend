@@ -18,16 +18,16 @@ body{
     margin-left: 10px;
 }
 .login{
-    background-color: rgba(255, 255, 255, .1);
     background: linear-gradient(#21C08B, #AB88FF);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 40px 0px;
+    padding: 0px 40px;
     min-height: calc(100vh - 200px);   
 }
 .login__container{
+    background-color: rgba(255, 255, 255, .1);
     border: 2px solid white;
     border-radius: 40px;
     color: white;
@@ -126,4 +126,19 @@ body{
 }
 .footer a:hover{
     text-decoration: underline;
+}
+
+/* Media querys */
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
