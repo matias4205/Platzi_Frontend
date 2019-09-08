@@ -37,6 +37,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.425);
 }
 .login__container--form{
     display: flex;
@@ -66,7 +67,7 @@ body{
     margin-bottom: 10px;
 }
 .login__container--social-media > div > img{ /* The ">" is for taking all the divs under a container with this class */
-    width: 30px;
+    width: 25px;
     margin-right: 10px;
 }
 .login__container--register{

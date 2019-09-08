@@ -1,0 +1,116 @@
+/* I'AM USING BEM TO WRITE MY CSS */
+body{
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #21C08B;
+}
+.header__img{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.register{
+    background-color: rgba(255, 255, 255, .1);
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    min-height: calc(100vh - 200px);   
+}
+.register__container{
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 650px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.register__container--form{
+    display: flex;
+    flex-direction: column;
+}
+.register__container--form label{
+    font-size: 14px
+}
+.register__container--remember{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.register__container--remember a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.register__container--remember a:hover{
+    text-decoration: underline;
+}
+.register__container--login{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.register__container--login:hover{
+    text-decoration: underline;
+}
+.input{
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.button{
+    height: 50px;
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: #AB88FF
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
