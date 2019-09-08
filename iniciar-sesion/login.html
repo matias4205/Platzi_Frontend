@@ -10,14 +10,14 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="../assets/logo-platzi-video.png" alt="header img">
+        <img tabindex="0" class="header__img" src="../assets/logo-platzi-video.png" alt="header img"> //
     </header>
     <section class="login">
         <div class="login__container">
-            <h2>Inicia sesion</h2>
+            <h2 tabindex="0">Inicia sesion</h2> <!-- tabindex="0" Para visar que al presional tab tiene que tomar en cuenta el elemento -->
             <form class="login__container--form" action="">
-                <input class="input" type="email" placeholder="Correo">
-                <input class="input" type="password" placeholder="Contreseña">
+                <input aria-label="Correo" class="input" type="email" placeholder="Correo">
+                <input aria-label="Contraseña" class="input" type="password" placeholder="Contreseña">
                 <button class="button">Iniciar sesion</button>
                 <div class="login__container--remember">
                     <label>
