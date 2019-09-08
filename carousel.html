@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <title>Carousel</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        font-family: 'Muli', sans-serif
+    }
+    .carousel{
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+    }
+    .carousel__container{
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+    .carousel-item{
+        width: 200px;
+        height: 250px;
+        background: palevioletred;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all; /* Makes the transition last 450ms and all the transition types */
+        transform-origin: center left; /* Makes the animation go from the center to the left */
+        position: relative;
+    }
+    .carousel-item:hover ~ .carousel-item { /* This makes that when we hover a certain item the otherones receive this style */
+        transform: translate3d(100px, 0, 0)
+    }
+    .carousel__container:hover .carousel-item { /* Lows the opacity of the carousel items when I am hovering the container */
+        opacity: 0.3;
+    }
+    .carousel__container:hover .carousel-item:hover{ /* Over scales the item I am hovering at */
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    .carousel-item__img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .carousel-item__details{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        font-size: 10px;
+        opacity: 1;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .carousel__details--buttons img{
+        width: 40px;
+    }
+    .carousel-item__details p{
+        margin: 4px 0px;
+    }
+    .carousel-item__details--title{
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+    }
+    .carousel-item__details--subtitle{
+        color: white;
+        font-size: 10px;
+    }
+</style>
+<body>
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/2884422/pexels-photo-2884422.jpeg?cs=srgb&dl=adult-alluring-attractive-2884422.jpg&fm=jpg" alt="pic">
+                <div class="carousel-item__details">
+                    <div class="carousel__details--buttons">
+                        <img src="./icons/icon-play.png" alt="play">
+                        <img src="./icons/icon-plus.png" alt="plus">
+                    </div>
+                    <p class="carousel-item__details--title">
+                        Titulo descriptivo
+                    </p>
+                    <p class="carousel-item__details--subtitle">
+                        2019 16+ 114 minutes
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
